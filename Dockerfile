@@ -7,5 +7,8 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . .
 
+#Install the package
+RUN npm install
+
 # Run the Node.js application
 CMD ["node", "hello.js"]
